@@ -108,6 +108,7 @@ resource "azurerm_app_configuration_key" "config_custom_data_script" {
   key   = "custom-data-script-base64-encoded"
   value = module.custom_data.base64_encoded_script
   tags  = var.tags
+  label = "github-runners"
 
   depends_on = [
     azurerm_role_assignment.current_user_principal_app_config_data_owner
