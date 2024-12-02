@@ -79,7 +79,7 @@ variable "github_runner_username" {
 
 variable "github_runner_version" {
   type    = string
-  default = "2.295.0"
+  default = "2.321.0"
 }
 
 variable "github_runner_labels" {
