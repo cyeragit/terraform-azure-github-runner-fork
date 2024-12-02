@@ -16,14 +16,14 @@ USER_ID=$(id -ru $${USER_NAME})
 
 # Install runner
 # Create a folder
-cd /opt
-mkdir actions-runner && cd actions-runner
+#cd /opt
+#mkdir actions-runner && cd actions-runner
 
 # Download the latest runner package
-curl -LO https://github.com/actions/runner/releases/download/v${runner_version}/actions-runner-linux-x64-${runner_version}.tar.gz
+#curl -LO https://github.com/actions/runner/releases/download/v${runner_version}/actions-runner-linux-x64-${runner_version}.tar.gz
 
 # Extract the installer
-tar xzf ./actions-runner-linux-x64-${runner_version}.tar.gz
+#tar xzf ./actions-runner-linux-x64-${runner_version}.tar.gz
 
 # config runner for rootless docker
 cd /opt/actions-runner/
