@@ -2,7 +2,6 @@
 exec > >(tee /var/log/user-data.log | logger -t user-data -s 2>/dev/console) 2>&1
 
 # Script requires four input variables, and accepts additional optional variables, supplied via terraform templatefile()
-# runner_version                REQUIRED e.g. "2.295.0"
 # runner_labels                 REQUIRED e.g. "azure, vm"
 # runner_owner                  REQUIRED e.g. "liatrio-enterprise"
 # registration_key_vault_name   REQUIRED e.g. "kv-gh-run-reg-liatriodev"
