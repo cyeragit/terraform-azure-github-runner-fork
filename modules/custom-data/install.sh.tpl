@@ -23,7 +23,6 @@ cd actions-runner
 
 ./config.sh \
   --unattended \
-  --ephemeral \
   --replace \
   --runnergroup ${runner_group} \
   --labels ${runner_labels} \
